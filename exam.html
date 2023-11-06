@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <name>Document</name>
+</head>
+
+<button onclick="btn()">switch</button>
+
+<body>
+
+    <script>
+
+        var product = [
+            {
+                id: 1,
+                available: true,
+                name: "1",
+                price: 470,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 2,
+                available: true,
+                name: "2",
+                price: 430,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 3,
+                available: true,
+                name: "3",
+                price: 567,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 4,
+                available: true,
+                name: "4",
+                price: 234,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 5,
+                available: false,
+                name: "5",
+                price: 987,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 6,
+                available: true,
+                name: "6",
+                price: 345,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 7,
+                available: false,
+                name: "7",
+                price: 890,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 8,
+                available: true,
+                name: "8",
+                price: 234,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 9,
+                available: false,
+                name: "9",
+                price: 897,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 10,
+                available: false,
+                name: "10",
+                price: 123,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 11,
+                available: true,
+                name: "11",
+                price: 567,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 12,
+                available: true,
+                name: "12",
+                price: 312,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 13,
+                available: true,
+                name: "13",
+                price: 935,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 14,
+                available: false,
+                name: "14",
+                price: 735,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+            {
+                id: 15,
+                available: true,
+                name: "15",
+                price: 295,
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, exercitationem.",
+            },
+        ];
+        product.filter(product => product.available === false).forEach(product => {
+            document.write("<br>" + product.name);
+        });
+
+        function btn() {
+            product.filter(product => product.available === true).forEach(product => {
+                document.write("<br>" + product.name);
+            });
+        }
+
+    </script>
+</body>
+
+</html>
